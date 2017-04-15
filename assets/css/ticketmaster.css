@@ -1,0 +1,12 @@
+
+.card-content p {
+	color: teal;
+
+}
+
+#ticket-results{
+	max-height: 350px;
+	max-width: 350px;
+	overflow: scroll;
+	overflow-x: hidden;
+}

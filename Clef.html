@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>Clef</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Lobster|Fredoka One" rel="stylesheet">
+	<link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="assets/css/spotify.css" type="text/css" rel="stylesheet">
+	<link href="assets/css/ticketmaster.css" type="text/css" rel="stylesheet">
+	<link href="assets/css/wiki.css" type="text/css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+	<script id="results-template" type="text/x-handlebars-template">
+		{{#each albums.items}}
+		<div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
+		{{/each}}
+	</script>
+</head>
+<body>
+
+
+	<div id="index-banner" class="parallax-container">
+
+		<div class="container">
+			<br><br>
+			<h1 class="header center teal-text text-lighten-2">Clef</h1>
+			<div class="row center">
+				<h5 class="header col s12 light">Enter artist name to Clef their info</h5>
+			</div>
+			<div class="row center">
+				<form id="artist-search">
+					<input id="query" type="text" size="35"><br>
+					<input type="submit" value="Submit">
+				</form>
+
+			</div>
+			<br><br>
+
+
+		</div>
+		<div class="parallax">
+			<img src="assets/images/DJ3.jpg" alt="Live music background img 1">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="bg">
+			<img src="assets/images/Bkg_01.jpg" alt="Live music background img 2">
+		</div>
+		<div class="row" id="titles">
+			<div class="col s12 m4">
+				<h2 class="center brown-text"><i class="material-icons">Info</i></h2>
+			</div>
+			<div class="col s12 m4">
+				<h2 class="center brown-text"><i class="material-icons">Music</i></h2>
+			</div>
+			<div class="col s12 m4">
+				<h2 class="center brown-text"><i class="material-icons">Live</i></h2>
+			</div>
+		</div>
+		<div class="section">
+			<div class="row">
+				<div class="col s12 m4">
+					<div id="wiki-result"></div>
+				</div>
+				<div class="col s12 m4">
+					<div id="spotify-results"></div>
+				</div>
+				<div class="col s12 m4">
+					<div id="ticket-results"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="page-footer teal">
+		<div class="container">
+			<div class="devImages">
+				<div class="row">
+					<h5 class="devConnect">Connect with our Developers</h5>
+				</div>
+				<div class="row">
+					<div class="col l4 s4">
+						<img src="assets/images/Cameron.png" alt ="Cameron" width="150"/>
+						<p>
+							Cameron Ball
+							<br>
+							Backend Developer
+							<br>
+							<a href="http://github.com/cameronleeball">
+								<img src="assets/images/github.png" alt="github cameron" height="42" width="42">
+							</a>
+							<a href="https://www.linkedin.com/in/cameronleeball/">
+								<img src="assets/images/linkedin.png" height="42" width="42">
+							</a>
+							<a href="mailto:cameronleeball@gmail.com">
+								<img src="assets/images/email.png" height="42" width="42">
+							</a>
+						</p>
+					</div>
+					<div class="col l4 s4">
+						<img class="richard" src="assets/images/Richard.png" alt="Richard" width="150"/>
+						<p>
+							Richard Woodward
+							<br>
+							Backend Developer
+							<br>
+							<a href="https://github.com/rickwoody86">
+								<img src="assets/images/github.png" height="42px" width="42px">
+							</a>
+							<a href="https://www.linkedin.com/in/richard-woodward-747042134/">
+								<img src="assets/images/linkedin.png" height="42px" width="42px">
+							</a>
+							<a href="mailto:rickwoody86@gmail.com">
+								<img src="assets/images/email.png" height="42px" width="42px">
+							</a>
+						</p>
+					</div>
+					<div class="col l4 s4">
+						<img class="wali" src="assets/images/Wali.png" width="150"/>
+						<p>
+							Wali Pitt
+							<br>
+							Frontend Developer
+							<br>
+							<a href="http://github.com/walidpitt">
+								<img src="assets/images/github.png" height="42px" width="42px">
+							</a>
+							<a href="https://www.linkedin.com/in/wali-pitt-61666941/">
+								<img src="assets/images/linkedin.png" height="42px" width="42px">
+							</a>
+							<a href="mailto:walidpitt@gmail.com">
+								<img src="assets/images/email.png" height="42px" width="42px">
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-copyright">
+			<div class="container">
+				<p> Created by Clef Group llc©</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="assets/js/materialize.js"></script>
+	<script src="assets/js/init.js"></script>
+	<script src="assets/js/spotify.js"></script>
+	<script src="assets/js/wiki.js"></script>
+	<script src="assets/js/ticketmaster.js"></script>
+</body>
+</html>

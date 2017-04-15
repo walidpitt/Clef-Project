@@ -1,0 +1,20 @@
+.cover {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-size: cover;
+}
+.cover:hover {
+    cursor: pointer;
+}
+.cover.playing {
+	
+    border: 5px solid #e45343;
+}
+
+#spotify-results{
+	max-height: 350px;
+	max-width: 350px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
